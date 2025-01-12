@@ -17,6 +17,7 @@ done << (find $Directory_Path -type f -mtime +30)
 
 for file in "${File_List[@]}"; do
   echo "$file"
+  rm "$file"
 done
 
 # Explanation:
